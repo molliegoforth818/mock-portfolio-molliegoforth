@@ -22,4 +22,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', prof_exps.views.home, name = 'home'), 
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    path('prof_exps/<int:prof_exp_id>', prof_exps.views.detail, name='detail'),
+] 
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
