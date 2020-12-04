@@ -46,6 +46,7 @@
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
         }
+        
       }
     </style>
     <!-- Custom styles for this template -->
@@ -89,10 +90,9 @@
       <div class="carousel-item active">
         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
         <div class="container">
-          <div class="carousel-caption text-left">
+          <div class="carousel-caption text-left" style="background-image: url('prof-profpic.jpg');">
             <h1>Mollie Goforth | Full-Stack Software Developer</h1>
             <p>Junior Software Developer, Lifelong Learner, and Job Seeker</p>
-            <img src="{% static 'prof-profpic.jpg' %}" height= 500><img>
           </div>
         </div>
       </div>
@@ -111,7 +111,6 @@
           <div class="carousel-caption text-right">
             <h1>About Me</h1>
             <p>Who I am, why I started coding, and why I would make a great addition to your dev team</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
           </div>
         </div>
       </div>
@@ -143,14 +142,14 @@
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-        <h2>Heading</h2>
-        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+        <h2>Education</h2>
+        <p>School of the Arts, to a 4-year University, To a Software Development Bootcamp</p>
         <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-        <h2>Heading</h2>
-        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <h2>About Me</h2>
+        <p>Art School, History nerd, looking for her creative outlet through Software Development.</p>
         <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
@@ -162,8 +161,8 @@
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        <h2 class="featurette-heading">Freelance Software Developer with Washed Up On Maui<span class="text-muted">It’ll blow your mind.</span></h2>
+        <p class="lead">Independently working, building eCommerce site for a jewelry company in Hawaii. Loading in shop inventory, styling the site, and launching a live shopping eCommerce site within a month-long deadline. I worked closely with the owner to make sure that all the needs of the business were met. </p>
       </div>
       <div class="col-md-5">
         <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
@@ -174,8 +173,8 @@
 
     <div class="row featurette">
       <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        <h2 class="featurette-heading">Curb Alert 🚨 <span class="text-muted">Individual Capstone Project</span></h2>
+        <p class="lead">Curb Alert is a full-stack Django web application that allows users to donate goods directly back into their community before taking it to a donation center. I built this solo project with Python, Django ORM, as well as Bootstrap.Js for styling and Leaflet.Js for the interactive map showing donation locations.   </p>
       </div>
       <div class="col-md-5 order-md-1">
         <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
@@ -186,8 +185,10 @@
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        <h2 class="featurette-heading">Bangazon <span class="text-muted">Group Project</span></h2>
+        <p class="lead">Bangazon is a full-stack web application built with four other group members providing e-commerce functionality including, browsing, buying, and selling products. The back-end was built with Python and Django Rest Framework, with a front-end built with React, JSX, and styled with CSS. I was personally responsible for building full CRUD functionality for Account Settings.
+
+</p>
       </div>
       <div class="col-md-5">
         <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
@@ -195,6 +196,16 @@
     </div>
 
     <hr class="featurette-divider">
+        <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">TradeYa! <span class="text-muted">Front-end Individual Capstone Project</span></h2>
+        <p class="lead">TradeYa! is a single page application I created after realizing that I share clothes with my closest friends regardless of the differences of size between us, because women's clothing sizes are a joke. This application allows you to curate pieces in your closet that you want to share with friends in a group closet so that you trade closet items between group closet users. TradeYa! was built using React.Js, styled with CSS and full CRUD functionality, in addition to a local JSON server to execute API fetch calls. </p>
+      </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+      </div>
+    </div>
+
 
     <!-- /END THE FEATURETTES -->
 
