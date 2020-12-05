@@ -1,9 +1,9 @@
-
+{% comment %} 
 {% for prof_exp in prof_exps.all %}
 
 {{ prof_exp.summary }}
 
-{% endfor %}
+{% endfor %} {% endcomment %}
 
 
 <!doctype html>
@@ -53,31 +53,6 @@
     <link href="carousel.css" rel="stylesheet">
   </head>
   <body>
-    <header>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <a class="navbar-brand" href="#">Mollie Goforth</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Professional Experience</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Education</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About Me</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</header>
-
 <main role="main">
 
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -88,11 +63,12 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+        <svg class="bd-placeholder-img" width="100%" height="675" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
         <div class="container">
-          <div class="carousel-caption text-left" style="background-image: url('prof-profpic.jpg');">
-            <h1>Mollie Goforth | Full-Stack Software Developer</h1>
+          <div class="carousel-caption text-left">
+           <h1>Mollie Goforth | Full-Stack Software Developer</h1>
             <p>Junior Software Developer, Lifelong Learner, and Job Seeker</p>
+      <img src="{% static 'prof-profpic.jpg' %}" height="500" />
           </div>
         </div>
       </div>
@@ -138,7 +114,7 @@
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
         <h2>Professional Experience</h2>
         <p>Taking on a Freelance project right after graduation, taught me so many things; Mainly that I miss working on a team.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        <p><a class="btn btn-secondary" href="" role="button">View details &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
@@ -149,7 +125,7 @@
       <div class="col-lg-4">
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
         <h2>About Me</h2>
-        <p>Art School, History nerd, looking for her creative outlet through Software Development.</p>
+        <p>Art School nerd, History nerd, looking for her creative outlet through Software Development.</p>
         <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
@@ -161,7 +137,7 @@
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading">Freelance Software Developer with Washed Up On Maui<span class="text-muted">Freelance Work</span></h2>
+        <h2 class="featurette-heading">Freelance Software Developer with Washed Up On Maui<span class="text-muted"> Freelance Work</span></h2>
         <p class="lead">Independently working, building eCommerce site for a jewelry company in Hawaii. Loading in shop inventory, styling the site, and launching a live shopping eCommerce site within a month-long deadline. I worked closely with the owner to make sure that all the needs of the business were met. </p>
       </div>
       <div class="col-md-5">
