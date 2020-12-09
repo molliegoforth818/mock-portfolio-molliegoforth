@@ -23,6 +23,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', prof_exps.views.home, name = 'home'), 
     path('prof_exps', prof_exps.views.prof_exp_detail, name='prof_exp_detail'),
+    path('education', prof_exps.views.education_detail, name='education_detail'),
+    path('about_me', prof_exps.views.about_me_detail, name='about_me_detail'),
 ] 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

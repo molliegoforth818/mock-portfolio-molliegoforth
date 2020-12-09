@@ -1,11 +1,4 @@
 
-{% for prof_exp in prof_exps.all %}
-
-{{ prof_exp.summary }}
-
-{% endfor %} 
-
-
 <!doctype html>
 <html lang="en">
 {% load static %}
@@ -123,13 +116,13 @@
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
         <h2>Education</h2>
         <p>School of the Arts, to a 4-year University, To a Software Development Bootcamp</p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        <p><a class="btn btn-secondary" href="{% url 'education_detail' %}" role="button">View details &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
         <h2>About Me</h2>
         <p>Art School nerd, History nerd, looking for her creative outlet through Software Development.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        <p><a class="btn btn-secondary" href="{% url 'about_me_detail' %}" role="button">View details &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
 
@@ -165,9 +158,7 @@
     <div class="row featurette">
       <div class="col-md-7">
         <h2 class="featurette-heading">Bangazon <span class="text-muted">Group Project</span></h2>
-        <p class="lead">Bangazon is a full-stack web application built with four other group members providing e-commerce functionality including, browsing, buying, and selling products. The back-end was built with Python and Django Rest Framework, with a front-end built with React, JSX, and styled with CSS. I was personally responsible for building full CRUD functionality for Account Settings.
-
-</p>
+        <p class="lead">Bangazon is a full-stack web application built with four other group members providing e-commerce functionality including, browsing, buying, and selling products. The back-end was built with Python and Django Rest Framework, with a front-end built with React, JSX, and styled with CSS. I was personally responsible for building full CRUD functionality for Account Settings.</p>
       </div>
       <div class="col-md-5">
         <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
@@ -176,7 +167,7 @@
 
     <hr class="featurette-divider">
         <div class="row featurette">
-      <div class="col-md-7">
+      <div class="col-md-7 order-md-2">
         <h2 class="featurette-heading">TradeYa! <span class="text-muted">Front-end Individual Capstone Project</span></h2>
         <p class="lead">TradeYa! is a single page application I created after realizing that I share clothes with my closest friends regardless of the differences of size between us, because women's clothing sizes are a joke. This application allows you to curate pieces in your closet that you want to share with friends in a group closet so that you trade closet items between group closet users. TradeYa! was built using React.Js, styled with CSS and full CRUD functionality, in addition to a local JSON server to execute API fetch calls. </p>
       </div>
@@ -194,7 +185,6 @@
   <!-- FOOTER -->
   <footer class="container">
     <p class="float-right"><a href="#">Back to top</a></p>
-    <p>&copy; 2017-2020 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
   </footer>
 </main>
 <script src="{% static 'jquery-3.5.1.min.js'%}" ></script>
