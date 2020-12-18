@@ -41,9 +41,20 @@
         
       }
     </style>
+    <hr class="featurette-divider">
 
-            {% for prof_exp in prof_exps.all %}
- 
+    <div class="row featurette">
+      <div class="col-md-7">
+            {% for about_me in about_me.all %}
+        <h2 class="featurette-heading">Freelance Software Developer with Washed Up On Maui<span class="text-muted"> Freelance Work</span></h2>
+        <p class="lead">Independently working, building eCommerce site for a jewelry company in Hawaii. Loading in shop inventory, styling the site, and launching a live shopping eCommerce site within a month-long deadline. I worked closely with the owner to make sure that all the needs of the business were met. </p>
+      </div>
+      <div class="col-md-5">
+        <img src="{% static 'washeduponmaui.jpg' %}" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title></title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></img>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
     {% endfor %}
 <footer class="container">
     <p class="float-right"><a href="#">Back to top</a></p>
