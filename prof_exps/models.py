@@ -24,6 +24,13 @@ class About_Me(models.Model):
     def __str__(self):
         return self.title
     
+class Curb_Alert(models.Model):
+    title = models.CharField(max_length=100, default = False) 
+    videofile = models.FileField(models.URLField(("curbalertdemo.mp4"), max_length=200))
+
+    def __str__(self):
+        return self.videofile
+    
 
 
 
