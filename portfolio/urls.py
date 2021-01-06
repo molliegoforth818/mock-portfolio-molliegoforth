@@ -25,6 +25,7 @@ urlpatterns = [
     path('prof_exps', prof_exps.views.prof_exp_detail, name='prof_exp_detail'),
     path('education_detail', prof_exps.views.education_detail, name='education_detail'),
     path('about_me_detail', prof_exps.views.about_me_detail, name='about_me_detail'),
+    path('curb_alert_demo', prof_exps.views.curb_alert_demo, name='curb_alert_demo'),
 ] 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
