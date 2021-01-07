@@ -29,7 +29,8 @@ class Curb_Alert(models.Model):
     videofile = models.FileField(models.URLField(("curbalertdemo.mp4"), max_length=200))
 
     def __str__(self):
-        return self.videofile
+        return self.title
+        
     
 
 

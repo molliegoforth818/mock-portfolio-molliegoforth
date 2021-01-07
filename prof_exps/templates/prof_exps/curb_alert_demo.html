@@ -44,17 +44,15 @@
     <hr class="featurette-divider">
     <div class="row featurette">
       <div class="col-md-7">
-            {% for curb_alert in about_me.all %}
-        <h2 class="featurette-heading"> Curb Alert 🚨 Demonstration Video<span class="text-muted"></span></h2>
+            {% for curb_alert in curb_alert.all %}
+        <h2 class="featurette-heading"> {{curb_alert.title}}<span class="text-muted"></span></h2>
         <p class="lead"> </p>
-      <p><a class="btn btn-lg btn-primary" href="mailto:molliegoforth818@gmail.com" role="button">Email Me</a></p>
       </div>
       <div class="col-md-5">
-      <video width="320" height="240" controls>
-  <source src="curbalertdemo.mp4" type="video/mp4">
+      <video width="320" height="240" controls autoplay>
+  <source src= type="video/mp4">
 Your browser does not support the video tag.
 </video>
-        <img src="{% static '' %}" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title></title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></img>
       </div>
     </div>
     <hr class="featurette-divider">
